@@ -10,7 +10,7 @@ RUN git clone https://gitlab.kitware.com/cmake/cmake.git && \
     cd cmake && \
     ./configure --qt-gui && \
     ./bootstrap && \
-    make install -j6 && \
+    make install -j$(npoc) && \
     update-alternatives --install /usr/bin/cmake cmake /usr/local/bin/cmake 1 --force
 
 RUN git clone --recursive https://github.com/CMU-Perceptual-Computing-Lab/openpose && \
@@ -19,5 +19,5 @@ RUN git clone --recursive https://github.com/CMU-Perceptual-Computing-Lab/openpo
     mkdir build && \
     cd build && \
     cmake .. && \
-    make
+    make -j$(nproc)
 
