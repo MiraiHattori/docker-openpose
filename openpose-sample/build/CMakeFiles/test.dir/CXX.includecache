@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/userdir/openpose-sample/src/test.cpp
+opencv2/opencv.hpp
+-
+openpose/flags.hpp
+-
+openpose/headers.hpp
+-
+openpose/pose/poseParameters.hpp
+-
+

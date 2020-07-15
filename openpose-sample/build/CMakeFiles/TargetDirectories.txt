@@ -1,0 +1,3 @@
+/userdir/openpose-sample/build/CMakeFiles/rebuild_cache.dir
+/userdir/openpose-sample/build/CMakeFiles/test.dir
+/userdir/openpose-sample/build/CMakeFiles/edit_cache.dir
